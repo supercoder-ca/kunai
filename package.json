@@ -1,0 +1,60 @@
+{
+  "name": "kunai",
+  "version": "0.0.66",
+  "description": "encrypted email service",
+  "main": "index.js",
+  "private": false,
+  "scripts": {
+    "dev": "NODE_OPTIONS=--experimental-worker nuxt",
+    "build": "NODE_OPTIONS=--experimental-worker nuxt build",
+    "start": "NODE_OPTIONS=--experimental-worker pm2 start pm2.config.js",
+    "generate": "NODE_OPTIONS=--experimental-worker nuxt generate",
+    "test": "mocha .",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/perimetral/kunai.git"
+  },
+  "author": "perimetral",
+  "license": "BSD-4-Clause",
+  "bugs": {
+    "url": "https://github.com/perimetral/kunai/issues"
+  },
+  "homepage": "https://github.com/perimetral/kunai#README",
+  "dependencies": {
+    "@nuxtjs/auth": "latest",
+    "@nuxtjs/axios": "latest",
+    "axios": "latest",
+    "bitcoin-core": "latest",
+    "blake2b-wasm": "latest",
+    "body-parser": "latest",
+    "config": "latest",
+    "connect-mongo": "latest",
+    "cookie-parser": "latest",
+    "express": "latest",
+    "express-jwt": "latest",
+    "express-session": "latest",
+    "helmet": "latest",
+    "lodash": "latest",
+    "material-design-icons-iconfont": "latest",
+    "mongoose": "latest",
+    "node-threadpool": "latest",
+    "nuxt": "latest",
+    "passport": "latest",
+    "passport-local": "latest",
+    "passport-local-mongoose": "latest",
+    "vuetify": "latest",
+    "vuex-persistedstate": "latest"
+  },
+  "devDependencies": {
+    "babel-eslint": "latest",
+    "eslint": "latest",
+    "eslint-loader": "latest",
+    "eslint-plugin-vue": "latest",
+    "node-sass": "latest",
+    "sass-loader": "latest",
+    "thread-loader": "latest"
+  }
+}
